@@ -1,0 +1,109 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: black;
+    line-height: 2;
+}
+a{
+    text-decoration: underline;
+    color:blue;
+}
+.navbar{
+   display: inline;
+   justify-content: space-between;
+   align-items: center;
+   background-color: aliceblue;
+   padding: 1rem;
+  
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+li a{
+    color: blue;
+    transition: color 0.3s ease;
+
+}
+&:hover{
+    color: #222;
+}
+.hero{
+    background-color: aliceblue;
+    padding: auto;
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+
+   
+    
+}
+.about{
+    padding: 2rem 1rem;
+    background-color: aliceblue;
+
+
+}
+.projects{
+    padding: 2rem 1rem;
+    background-color: aliceblue;
+
+    .project-grid{
+        display: grid;
+        grid-template-columns: repeat(minmax(200px,1fr));
+        gap: 1rem;
+
+        .project-card{
+            background: white;
+            border: 1px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+            transition: transform 0.3s ease;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+    input,textarea{
+        padding: 1rem;
+        border: 1px solid ;
+    }
+    button{
+        background-color: rgb(32, 32, 122);
+        padding: 1rem;
+        border: none;
+        cursor: pointer;
+        
+    }
+    &:hover{
+        background-color: blue;
+    }
+}
+footer{
+    padding: 1rem;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+}
